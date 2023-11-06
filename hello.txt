@@ -1,0 +1,258 @@
+1) student registration
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REGISTRATION FORM</title>
+  <link rel="stylesheet" href="exp1.css">
+</head>
+<body>
+  <h1>REGISTRATION FORM</h1>
+  <div class="a">
+    <label>NAME</label>
+    <input type="text" name="your-name">
+  </div>
+  <div class="b">
+    <label>ROLL_NO</label>
+    <input type="text" name="your-roll-no">
+  </div>
+  <div class="c">
+    <label>USERNAME</label>
+    <input type="text" name="username">
+  </div>
+  <div class="c">
+    <label>PASSWORD</label>
+    <input type="password" name="password">
+  </div>
+  <div class="d">
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</body>
+</html>
+
+
+body {
+    text-align: center;
+    background-color: chocolate;
+    margin: auto;
+  }
+  
+  .a, .b, .c, .d {
+    margin-top: 50px;
+  }
+
+
+2)navigation bar
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NAVBAR</title>
+  <link rel="stylesheet" href="exp2.css">
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+  </ul>
+</body>
+</html>
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .active {
+    background-color: gray;
+    color: white;
+  }
+
+  li a:hover {
+    background-color: orange;
+    color: white;
+  }
+
+
+
+3)login page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: #D4E2D4;
+            background-size: cover;
+            width: 100%;height: 100vh;
+        }
+        h1{
+            background-color: #61677A;
+            color: white;
+        }
+        #a{
+            background-color:rgb(255, 255, 255); width: 300px;text-align: center;
+            /* border-radius: 15px;  */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 50px;
+            padding-bottom:50px ;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div align="center">
+            <h1>Registration Page</h1>
+            <form id="a">
+                Name: <input type="text"><br><br>
+                Roll no: <input type="text"><br><br>
+                Username: <input type="text"><br><br>
+                Password: <input type="password"><br><br>
+                Gender: male<input type="radio" name="a"> female<input type="radio" name="a" ><br><br>
+                Area of Intrest<input type="checkbox">programing<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Marketing<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Finance<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Data Analysis<br><br>
+                <button>Submit Form</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset">Clear Form</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+4)bootstrap
+
+
+
+
+5) 5 events
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body onload="load()" onresize="resize()">
+    <button onclick="submit()" vlaue="click">click</button>
+    <button onmouseover="mouseover()" value="submit">mouseover</button>
+    <button onmouseout="mouseout()" value="Submit">mouseout</button>
+    <form onreset="resetForm()">Enter name:<input type="text"><input type="reset">
+    </form>
+    </body>
+    <script>
+    function load(){
+        alert("loaded")
+    }
+    function resize(){
+        alert("page resized")
+    }
+    function submit()
+    {
+        alert ("triggered by onclick")
+        }
+    function mouseover(){
+        document.body.style.background="#D5ACA9";
+        }
+    function mouseout()
+    {
+        document.body.style.background="lightblue";
+        }
+    function resetForm()
+    {
+        alert("This form was reset")
+    }
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10)
+const fs = require("fs"); const path = require("path")
+const dirPath = path.join(__dirname, 'test');
+const filePath = dirPath + "\\node.txt";
+fs.writeFileSync(filePath, `${filePath} Created !!`);
+const data = fs.readFileSync(filePath, 'utf-8'); console.log(data);
+const apErr = fs.appendFileSync(filePath, "\nThis is append data")
+if (apErr) console.log(apErr); else console.log("Appended");
+const renameErr = fs.renameSync(filePath, dirPath + "\\newtest.txt");
+if (renameErr) console.log(renameErr); else console.log("Renamed");
+const delErr = fs.unlinkSync(dirPath + "\\newtest.txt");
+if (delErr) console.log(delErr); else
+console.log("deleted");
+
+11)
+const http=require("http");
+const fs = require ('fs');
+const port=3030;
+const server=http.createServer(function(req,res) 
+{
+    res.writeHead(200,{'content-type':'text/html'})
+    fs.readFile('index11.html',function(error,data)
+    {
+        if(error)
+        {
+            res.write(404);
+            res.write('Error:Filenotfound');
+        }
+        else
+        {
+            res.write(data)
+        }
+        res.end()
+    })
+})
+server.listen(port,function(error){
+    if(error){
+    console.log('Something went wrong',error)
+    }
+    else{
+    console.log('Server is listening on port'+port)
+    }
+})
+    
+
