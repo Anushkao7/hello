@@ -1,0 +1,470 @@
+
+https://shorturl.at/bmnuX
+
+1) student registration
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REGISTRATION FORM</title>
+  <link rel="stylesheet" href="exp1.css">
+</head>
+<body>
+  <h1>REGISTRATION FORM</h1>
+  <div class="a">
+    <label>NAME</label>
+    <input type="text" name="your-name">
+  </div>
+  <div class="b">
+    <label>ROLL_NO</label>
+    <input type="text" name="your-roll-no">
+  </div>
+  <div class="c">
+    <label>USERNAME</label>
+    <input type="text" name="username">
+  </div>
+  <div class="c">
+    <label>PASSWORD</label>
+    <input type="password" name="password">
+  </div>
+  <div class="d">
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</body>
+</html>
+
+
+body {
+    text-align: center;
+    background-color: chocolate;
+    margin: auto;
+  }
+  
+  .a, .b, .c, .d {
+    margin-top: 50px;
+  }
+=============================================================================================================================================
+
+
+2)navigation bar
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NAVBAR</title>
+  <link rel="stylesheet" href="exp2.css">
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+  </ul>
+</body>
+</html>
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .active {
+    background-color: gray;
+    color: white;
+  }
+
+  li a:hover {
+    background-color: orange;
+    color: white;
+  }
+
+=======================================================================================================================================================
+
+3)login page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: #D4E2D4;
+            background-size: cover;
+            width: 100%;height: 100vh;
+        }
+        h1{
+            background-color: #61677A;
+            color: white;
+        }
+        #a{
+            background-color:rgb(255, 255, 255); width: 300px;text-align: center;
+            /* border-radius: 15px;  */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 50px;
+            padding-bottom:50px ;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div align="center">
+            <h1>Registration Page</h1>
+            <form id="a">
+                Name: <input type="text"><br><br>
+                Roll no: <input type="text"><br><br>
+                Username: <input type="text"><br><br>
+                Password: <input type="password"><br><br>
+                Gender: male<input type="radio" name="a"> female<input type="radio" name="a" ><br><br>
+                Area of Intrest<input type="checkbox">programing<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Marketing<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Finance<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">Data Analysis<br><br>
+                <button>Submit Form</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset">Clear Form</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+===============================================================================================================================================
+4)bootstrap
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NAVIGATION BAR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>
+
+==============================================================================================================================================
+
+5) 5 events
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body onload="load()" onresize="resize()">
+    <button onclick="submit()" vlaue="click">click</button>
+    <button onmouseover="mouseover()" value="submit">mouseover</button>
+    <button onmouseout="mouseout()" value="Submit">mouseout</button>
+    <form onreset="resetForm()">Enter name:<input type="text"><input type="reset">
+    </form>
+    </body>
+    <script>
+    function load(){
+        alert("loaded")
+    }
+    function resize(){
+        alert("page resized")
+    }
+    function submit()
+    {
+        alert ("triggered by onclick")
+        }
+    function mouseover(){
+        document.body.style.background="#D5ACA9";
+        }
+    function mouseout()
+    {
+        document.body.style.background="lightblue";
+        }
+    function resetForm()
+    {
+        alert("This form was reset")
+    }
+    </script>
+</html>
+
+================================================================================================================================================
+7) and 8)
+EXP 6 FUNCTIONAL COMPONENT:
+App.js:-
+import './App.css';
+import Function from './Component/Function';
+import Class1 from './Component/Class';
+
+function App(){
+  return(
+    <div className="App">
+      <Function/>
+      <Class1/>
+      <header className="App-header">
+        <h1>IPL Practical Exam - PRN</h1>
+      </header>
+    </div>
+  ); 
+}
+export default App;
+
+App.css:-
+.App {
+  text-align: left;
+  background-color: #282c34;
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+--- create a folder in src and name it "Component" in that create 2 files naming Class.js and Function.js ----
+
+Class.js:-
+import React, { Component } from "react";
+class Class1 extends Component{
+    render() {
+        return(
+            <div>
+                <p><h1>
+                    This is class Component
+                    </h1></p>
+                    <br></br>
+                    <ul>
+                        <li>X</li>
+                        <li>Y</li>
+                        <li>Z</li>
+                    </ul>
+            </div>
+        );
+    }
+}
+export default Class1;
+
+Function.js:-
+import React from "react";
+function Function(){
+    return(
+        <div>
+        <p><h1>
+            This is function component.
+            </h1></p>
+            <br></br>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </div>
+    );
+}
+export default Function;
+
+
+
+============================================================================================================================================
+
+C:\Users\Anushka\Desktop\new>create-react-app myapp
+
+ npm install react-router-dom@6
+
+
+App.js
+import React from "react";
+import { Component } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Counter from './component/Counter';
+import Home from './component/Home';
+import About from './component/About';
+import Users from './component/Users';
+class App extends Component {
+  render () {
+    return (
+      <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Counter" element={<Counter />} />
+          <Route path="/Users" element={<Users />} />
+        </Routes>
+      </Router>
+          </>
+    );
+  }
+}
+export default App;
+
+component ke andar
+About.js  counter.js   User.js
+import React from "react";
+
+function About() {
+    return (<div>
+        <h1>This is About Page</h1>
+    </div>);
+}
+export default About;
+
+Home.js
+import React from "react";
+import { Link } from 'react-router-dom';
+
+function Home() {
+    return <div>
+        <nav>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/users">Users</Link></li>
+                <li><Link to="/about">About</Link></li>
+            </ul>
+        </nav>
+    </div>
+}
+export default Home;
+
+
+=================================================================================================================================================
+10)
+const fs = require("fs"); const path = require("path")
+const dirPath = path.join(__dirname, 'test');
+const filePath = dirPath + "\\node.txt";
+fs.writeFileSync(filePath, `${filePath} Created !!`);
+const data = fs.readFileSync(filePath, 'utf-8'); console.log(data);
+const apErr = fs.appendFileSync(filePath, "\nThis is append data")
+if (apErr) console.log(apErr); else console.log("Appended");
+const renameErr = fs.renameSync(filePath, dirPath + "\\newtest.txt");
+if (renameErr) console.log(renameErr); else console.log("Renamed");
+const delErr = fs.unlinkSync(dirPath + "\\newtest.txt");
+if (delErr) console.log(delErr); else
+console.log("deleted");
+
+
+============================================================================================================================================
+11)
+const http = require("http"); 
+const fs = require("fs"); 
+const PORT = 5000;
+const server = http.createServer((req, res) => { res.writeHead(200, {"Content-Type": "text/html;",});
+fs.readFile("index.html", (err, data) => { if (err) {res.write(404); res.write("Erro:in File");} 
+else { res.write(data);}res.end();});});
+server.listen(PORT,  (err) => { if (err) {console.log("Error Server");} 
+else { console.log(`http://localhost:${PORT}`);}});
+
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>body{background-color: rgb(245, 235, 220);}
+               .colo-gr {color: rgb(5, 75, 26);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+               p{font-size: 30px;}
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center; font-size: 3rem">
+            <h3 class="colo-gr">Hello Everyone</h3>
+            <p class="colo-gr">HTML in Node js</p>
+        </div>
+    </body>
+</html>
+
+==============================================================================================================================================
+
+12)
+var express = require('express');   
+var app = express();   
+app.use(express.static('public'));   
+app.get('/index.html', function (req, res) { res.sendFile( __dirname + "/" + "index.html" );   })   
+app.get('/process_get', function (req, res) { response = { first_name:req.query.first_name, last_name:req.query.last_name}; console.log(response); res.end(JSON.stringify(response));})   
+var server = app.listen(8081, function () { var  host  =  server.address().address          
+var port  = server.address().port         
+console.log("Example  app listening at http://%s:%s", host, port)   })   
+
+<html>   
+    <body>   
+        <form action="http://127.0.0.1:8081/process_get" method="GET">   
+            First Name: <input type="text" name="first_name">  <br>   
+            Last Name: <input type="text" name="last_name">   
+            <input type="submit" value="Submit">   
+        </form>   
+    </body>   
+</html> 
+
+
+
